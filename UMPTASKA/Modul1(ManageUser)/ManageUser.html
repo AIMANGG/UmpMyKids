@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="UMPMyKids-logos_transparent(1).png" width="150px" height="150px" style="float:left">
+  <h1>UMP MyKids System</h1>
+  <p></p>
+</div>
+
+<div class="topnav">
+  <a href="http://localhost/Modul1/Homepage.html">Home</a>
+  <a href="User info">User info</a>
+  <a href="Admin">Admin</a>
+  <a href="Staff">Staff</a>
+  <a href="Teacher">Teacher</a>
+  <a href="Parent">Parent</a>
+  <a href="Student">Student</a>
+  <a href="About">About</a>
+
+  <a href="#" style="float:right">Logout</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+
+      <form action="/action_page.php">
+        <label for="cars">Choose User Type :</label>
+        <select name="cars" id="cars">
+          <option value="Staff">Staff</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Parent">Parent</option>
+          <option value="Student">Student</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Search">
+        <br><br>
+      </form>
+
+      <table>
+  <tr>
+    <th>Name</th>
+    <th>Class</th>
+    <th>Age</th>
+    <th>User ID</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>Germany</td>
+  </tr>
+</table>
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>User Info</h3>
+      <div <p>Create User</p></div>
+      <div <p>Update Profile</p></div>
+      <div <p>Delete Profile</p></div>
+      <div <p>View Profile</p></div>
+    </div>
+    <div class="card">
+      <h3>User List</h3>
+      <div <p>Total amount of user : 180</p></div>
+      <div <p>Staff : 10</p></div>
+      <div <p>Teacher : 10</p></div>
+      <div <p>Student : 80</p></div>
+      <div <p>Parent : 80</p></div>
+    </div>
+    <div class="card">
+      <h3>Report</h3>
+      <div <p>User Report</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2></h2>
+   <a href="Home">Home</a>
+  <a href="User info">Helps</a>
+  <a href="Admin">Privacy</a>
+  <a href="Staff">Logout</a>
+
+</div>
+
+</body>
+</html>

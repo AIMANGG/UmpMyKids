@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Invoice UMPMYKIDS</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('./abc.jpg');
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #FF0000; 
+      color: white;
+    }
+    
+    .topnav-right {
+      float: right;
+    }
+    .header {
+  padding: 30px;
+  text-align: center;
+  background: whitesmoke;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+</style>
+<div class="header">
+    <img src="UMPMyKids-logos_transparent(1).png" width="150px" height="100px" style="float:left">
+    
+      <h1>UMP MyKids System</h1>
+      
+      <p></p>
+    </div>
+<div class="topnav">
+    <a  href="#Home">Home</a>
+    <a href="#userinfo">User info</a>
+    <a class="active" href="#Admin">Admin</a>
+    <a href="#Staff">Staff</a>
+    <a href="#Teacher">Teacher</a>
+    <a href="#Parent">Parents</a>
+    <a href="#Student">Student</a>
+    <a href="#About">About</a>
+
+    <div class="topnav-right">
+      <a href="#Logout">Logout</a>
+      <a href="#Login">Login</a>
+      <a href="#Register">Register</a>
+    </div>
+  </div>
+    <br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Date
+                <strong>01/01/2022</strong>
+                <span class="float-right"> <strong>Status:</strong> Pending</span>
+                <br><br>
+                
+                  <form action="/action_page.php">
+                    <label for="choose">Month:</label>
+                    <input type="month" id="salmonth" name="salmonth">
+                    <input type="submit">
+                    <span class="float-right"> <strong>Reminder:</strong> 
+                      <input type="submit">
+                </form>
+
+            
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3">From:</h6>
+                        <div>
+                            <strong>Mr Irfazudin Bin Md Dahan</strong>
+                        </div>
+                        <div></div>
+                        <div>Email: irfazudin58@gmail.com</div>
+                        <div>Phone: +601116681329</div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h6 class="mb-3">To:</h6>
+                        <div>
+                            <strong>UMP Taska Anakku Comel Management System (UMP-myKids)</strong>
+                        </div>
+                        <div>University Malaysia Pahang, Pekan</div>
+                        <div>Email: umpmykids@ump.edu.my</div>
+                        <div>Phone: 09-334412</div>
+                    </div>
+                </div>
+
+                <div class="table-responsive-sm">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="center">Bill</th>
+                                <th>Fees Details</th>
+                                <th>Description</th>
+
+                                <th class="right">Cost</th>
+                                <th class="center">Month</th>
+                                <th class="right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center">1</td>
+                                <td class="left strong">Registration Fees</td>
+                                <td class="left"> Anual Fess</td>
+
+                                <td class="right">MYR 20.00</td>
+                                <td class="center">10</td>
+                                <td class="right">MYR 200.00</td>
+                            </tr>
+                            <tr>
+                                <td class="center">2</td>
+                                <td class="left">Activities Fees </td>
+                                <td class="left">Class indoor & outdoor daily activity</td>
+
+                                <td class="right">MYR 50</td>
+                                <td class="center">-</td>
+                                <td class="right">MYR 50</td>
+                            </tr>
+                            <tr>
+                                <td class="center">3</td>
+                                <td class="left">Annual PIBG fees</td>
+                                <td class="left">Additional class, donation & co-curriculum</td>
+
+                                <td class="right">MYR 50</td>
+                                <td class="center">-</td>
+                                <td class="right">MYR 50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+
+                    </div>
+
+                    <div class="col-lg-4 col-sm-5 ml-auto">
+                        <table class="table table-clear">
+                            <tbody>
+                                <tr>
+                                    <td class="left">
+                                        <strong>Total</strong>
+                                    </td>
+                                    <td class="right">
+                                        <strong>MYR 300</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2></h2>
+         <a href="Home">Home | </a>
+        <a href="User info">Helps | </a>
+        <a href="Admin">Privacy | </a>
+        <a href="Staff">Logout</a>
+        
+      </div>
+</body>
+</html>
